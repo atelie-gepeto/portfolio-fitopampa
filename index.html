@@ -215,6 +215,56 @@ nav.side .nb,nav.side .nl{display:none}
 .contato.preencher p{color:var(--yellow);font-weight:700}
 .ass{font:700 24px Fraunces,serif;margin-top:36px}
 .closing :focus-visible{outline-color:var(--paper)}
+
+/* 12 · como vai ser o trabalho */
+.ct{border-bottom:0}
+.ct-resumo{font:600 clamp(22px,2.6vw,28px)/1.35 Fraunces,Georgia,serif;border-left:6px solid var(--yellow);padding:4px 0 4px 18px;margin:22px 0 0;max-width:34ch}
+.leg{display:flex;flex-wrap:wrap;gap:10px 18px;list-style:none;padding:0;margin:28px 0 8px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;min-height:32px;padding:2px 12px;border:2px solid var(--ink);border-radius:999px;font:700 16px/1.2 "Source Sans 3",sans-serif;color:var(--ink);background:var(--paper)}
+.tag i{width:14px;height:14px;border:2px solid var(--ink);border-radius:50%;display:inline-block;flex:none}
+.tag.eu{background:var(--ink);color:var(--paper)}.tag.eu i{background:var(--paper);border-color:var(--paper)}
+.tag.junto{background:var(--yellow)}.tag.junto i{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%)}
+.marcoflag{display:inline-flex;align-items:center;min-height:32px;padding:2px 10px;border:2px solid var(--ink);background:var(--yellow);font:700 16px/1.2 "Source Sans 3",sans-serif;transform:none}
+.marcoflag::before{content:"";width:12px;height:12px;background:var(--ink);transform:rotate(45deg);margin-right:9px;flex:none}
+.tl{list-style:none;margin:32px 0 0;padding:0;position:relative;--p:1}
+.tl::before,.tl::after{content:"";position:absolute;left:22px;top:22px;bottom:22px;width:2px;background:var(--sage);transform:translateX(-50%)}
+.tl::after{width:6px;background:var(--ink);transform-origin:top;transform:translateX(-50%) scaleY(var(--p))}
+.etapa{position:relative;padding:0 0 22px 66px}.etapa:last-child{padding-bottom:0}
+.dot{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--paper);border:3px solid var(--ink);font:700 20px Fraunces,serif;display:grid;place-items:center;z-index:1}
+.etapa.marco .dot{border-radius:10px;background:var(--yellow);color:var(--ink)}
+.tl-anim .etapa:not(.on):not(.marco) .dot{background:var(--paper);color:var(--ink)}
+.ecard{background:var(--field);border:2px solid var(--ink);padding:16px 20px}
+.etapa.marco .ecard{border-width:3px;box-shadow:6px 6px 0 var(--yellow)}
+.ehead{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.ecard h3{font-size:clamp(22px,2.2vw,26px);margin:0}
+.emeta{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:10px 0 8px}
+.prazo{display:inline-flex;align-items:center;gap:8px;min-height:32px;padding:2px 10px;border:2px solid var(--ink);background:var(--paper);font:600 16px/1.2 "Source Sans 3",sans-serif}
+.prazo b{text-transform:uppercase;letter-spacing:.08em;font-size:16px;color:var(--accent)}
+.etxt{margin:0}
+.ct-blocos h3{display:flex;align-items:center;gap:12px}
+.ic{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--yellow);color:var(--ink);border:2px solid var(--ink);flex:none}
+.bloco-receber{margin-top:56px;border:2px solid var(--ink);padding:8px 24px 14px;background:var(--paper)}
+.bloco-receber h3{margin:14px 0 8px}.bloco-receber p{margin:0;font-size:20px}
+.h-rec{margin:56px 0 18px}
+.rc-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.rc{border:2px solid var(--ink);background:var(--field);padding:16px 18px}
+.rc h4{display:flex;align-items:center;gap:12px;font-size:22px;margin:0 0 10px}
+.rc ul{list-style:none;margin:0;padding:0}
+.rc li{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:9px 0;border-top:1px solid var(--sage)}
+.rc li:first-child{border-top:0}
+.rc .n{display:block;font-weight:600}.rc small{display:block;font-size:16px;line-height:1.4}
+.rc .q{flex:none;background:var(--ink);color:var(--paper);min-width:44px;text-align:center;padding:2px 10px;border-radius:999px;font:700 18px "Source Sans 3",sans-serif}
+.rnota{font-size:16px;margin:8px 0 0}
+.bloco-definir{margin-top:56px}
+.bloco-definir ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.bloco-definir li{border:2px dashed var(--ink);padding:14px 16px}.bloco-definir li p{margin:10px 0 0}
+.cv-box{margin-top:56px;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;border-top:2px solid var(--ink);padding-top:32px}
+.btn{display:inline-flex;align-items:center;min-height:56px;padding:0 28px;background:var(--ink);color:var(--paper);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--yellow);font:700 20px "Source Sans 3",sans-serif;text-decoration:none}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.cv-tam{font-size:17px}
+.ct-fecho{font:700 22px Fraunces,serif;margin:36px 0 0}
+@media(max-width:900px){.rc-g,.bloco-definir ul{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.etapa{padding-left:56px}.dot{width:38px;height:38px;font-size:18px}.tl::before,.tl::after{left:19px;top:19px;bottom:19px}.ecard{padding:14px 14px}}
 /* zoom */
 dialog#zoom{border:0;padding:0;background:rgba(10,24,17,.94);width:100vw;height:100vh;max-width:none;max-height:none;margin:0}
 dialog#zoom::backdrop{background:rgba(10,24,17,.94)}
@@ -251,7 +301,7 @@ dialog#zoom::backdrop{background:rgba(10,24,17,.94)}
 </style></head><body>
 <a class="skip" href="#abertura">Ir para o conteúdo</a>
 <header class="topbar"><a class="brand" href="#abertura">FitoPampa<span>Portfólio</span></a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button></header>
-<nav class="side" id="menu" aria-label="Seções do portfólio"><span class="nb">FitoPampa</span><span class="nl">Conservação pelo uso do Pampa</span><ol><li><a href="#abertura"><i>01</i>Portfólio de marca</a></li><li><a href="#estrategia"><i>02</i>Estratégia em uma página</a></li><li><a href="#identidade"><i>03</i>Identidade</a></li><li><a href="#instagram"><i>04</i>Instagram</a></li><li><a href="#reels"><i>05</i>Reels</a></li><li><a href="#site"><i>06</i>Site</a></li><li><a href="#cartilha"><i>07</i>Cartilha</a></li><li><a href="#objetos"><i>08</i>Objetos</a></li><li><a href="#sinalizacao"><i>09</i>Sinalização e rótulos</a></li><li><a href="#app"><i>10</i>App</a></li><li><a href="#fechamento"><i>11</i>Fechamento</a></li></ol></nav>
+<nav class="side" id="menu" aria-label="Seções do portfólio"><span class="nb">FitoPampa</span><span class="nl">Conservação pelo uso do Pampa</span><ol><li><a href="#abertura"><i>01</i>Portfólio de marca</a></li><li><a href="#estrategia"><i>02</i>Estratégia em uma página</a></li><li><a href="#identidade"><i>03</i>Identidade</a></li><li><a href="#instagram"><i>04</i>Instagram</a></li><li><a href="#reels"><i>05</i>Reels</a></li><li><a href="#site"><i>06</i>Site</a></li><li><a href="#cartilha"><i>07</i>Cartilha</a></li><li><a href="#objetos"><i>08</i>Objetos</a></li><li><a href="#sinalizacao"><i>09</i>Sinalização e rótulos</a></li><li><a href="#app"><i>10</i>App</a></li><li><a href="#fechamento"><i>11</i>Fechamento</a></li><li><a href="#como-trabalho"><i>12</i>Como vai ser o trabalho</a></li></ol></nav>
 <main><section id="abertura" class="sec hero" aria-labelledby="h-abertura">
 <div class="wrap hero-g">
   <div class="hero-t">
@@ -356,6 +406,18 @@ Conheça as pesquisas e ações.</p>
 <div class="fech-g"><div class="transp"><h3>Sobre as imagens e os campos de exemplo</h3><p>Este portfólio é uma proposta de apresentação, só para a banca. As imagens de cena (pessoas, objetos, ambientes) são sintéticas. Os campos marcados "exemplo" não são dados reais, e as chamadas e os textos das peças são exemplos. Os fatos vêm da cartilha <em>Da planta ao óleo</em> e do Termo de Referência, sem validação do contratante. As ilustrações das plantas são interpretativas e não houve validação botânica. Páginas, roteiros e telas são formatos de estudo, sem publicação.</p></div>
 <div class="contato" id="contato"><h3>Contato</h3><p>André Seixas · Ateliê Gepeto<br>atelie@gepeto.life<br>(13) 99607-1230</p></div></div>
 <p class="ass">FitoPampa. Conservação pelo uso do Pampa.</p>
+</div></section><section id="como-trabalho" class="sec ct" aria-labelledby="h-como-trabalho"><div class="wrap">
+<p class="num-big">12</p><h2 id="h-como-trabalho">Como vai ser o trabalho</h2><p class="abertura">Do primeiro encontro aos arquivos finais, em oito passos.</p>
+<p class="ct-resumo">Reunião, materiais, 20 dias de produção, entrega completa e 2 rodadas de ajuste de 10 dias cada.</p>
+<ul class="leg" aria-label="Legenda: quem faz cada etapa"><li><span class="tag voces"><i aria-hidden="true"></i>Vocês</span></li><li><span class="tag eu"><i aria-hidden="true"></i>André</span></li><li><span class="tag junto"><i aria-hidden="true"></i>Juntos</span></li><li><span class="marcoflag">Marco · ajuste</span></li></ul>
+<ol class="tl"><li class="etapa"><span class="dot" aria-hidden="true">1</span><div class="ecard"><div class="ehead"><h3>Reunião de alinhamento</h3></div><p class="emeta"><span class="tag junto"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>Juntos</span><span class="prazo"><b>Prazo</b> logo após a contratação</span></p><p class="etxt">Conversamos, alinhamos os detalhes e definimos o que falta.</p></div></li><li class="etapa"><span class="dot" aria-hidden="true">2</span><div class="ecard"><div class="ehead"><h3>Materiais e referências</h3></div><p class="emeta"><span class="tag voces"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>Vocês</span><span class="prazo"><b>Prazo</b> quando estiverem prontos</span></p><p class="etxt">Vocês enviam os materiais, arquivos, conteúdos, textos, imagens, fotos e o que mais for necessário para a execução do trabalho. Daqui contam os 20 dias.</p></div></li><li class="etapa"><span class="dot" aria-hidden="true">3</span><div class="ecard"><div class="ehead"><h3>Produção dos 12 itens</h3></div><p class="emeta"><span class="tag eu"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>André</span><span class="prazo"><b>Prazo</b> 20 dias</span></p><p class="etxt">Todos os itens andam ao mesmo tempo.</p></div></li><li class="etapa"><span class="dot" aria-hidden="true">4</span><div class="ecard"><div class="ehead"><h3>Entrega completa</h3></div><p class="emeta"><span class="tag eu"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>André</span><span class="prazo"><b>Prazo</b> ao fim dos 20 dias</span></p><p class="etxt">Vocês recebem o conjunto inteiro de uma vez.</p></div></li><li class="etapa marco"><span class="dot" aria-hidden="true">5</span><div class="ecard"><div class="ehead"><h3>Rodada de ajuste 1</h3><span class="marcoflag">Marco · ajuste</span></div><p class="emeta"><span class="tag junto"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>Vocês pedem, André ajusta</span><span class="prazo"><b>Prazo</b> até 10 dias</span></p><p class="etxt">Uma rodada de ajustes para todas as entregas.</p></div></li><li class="etapa marco"><span class="dot" aria-hidden="true">6</span><div class="ecard"><div class="ehead"><h3>Rodada de ajuste 2</h3><span class="marcoflag">Marco · ajuste</span></div><p class="emeta"><span class="tag junto"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>Vocês pedem, André ajusta</span><span class="prazo"><b>Prazo</b> até 10 dias</span></p><p class="etxt">Mais uma rodada de ajustes.</p></div></li><li class="etapa"><span class="dot" aria-hidden="true">7</span><div class="ecard"><div class="ehead"><h3>Arquivos finais</h3></div><p class="emeta"><span class="tag eu"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>André</span><span class="prazo"><b>Prazo</b> depois do ajuste 2</span></p><p class="etxt">Vocês recebem os arquivos e o apoio à produção; na cartilha, o acompanhamento de impressão.</p></div></li><li class="etapa"><span class="dot" aria-hidden="true">8</span><div class="ecard"><div class="ehead"><h3>Site no ar</h3></div><p class="emeta"><span class="tag junto"><i aria-hidden="true"></i><span class="sr">Quem faz: </span>Juntos</span><span class="prazo"><b>Prazo</b> mensal, se vocês precisarem</span></p><p class="etxt">Eu publico o site; o acompanhamento mensal cuida de domínio, hospedagem, manutenção e ajustes.</p></div></li></ol>
+<div class="ct-blocos">
+<div class="bloco-receber"><h3><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></svg></span>O que eu preciso receber de vocês</h3><p>Materiais, referências e arquivos do projeto, e as definições da reunião.</p></div>
+<h3 class="h-rec">O que vocês recebem</h3><div class="rc-g"><article class="rc"><h4><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 3 6l2 4 3-1v12h8V9l3 1 2-4-5-3a4 4 0 0 1-8 0z"/></svg></span>Materiais institucionais</h4><ul><li><span class="nt"><span class="n">Camisetas para seminário</span></span><b class="q">2</b></li><li><span class="nt"><span class="n">Caneta do kit</span></span><b class="q">1</b></li><li><span class="nt"><span class="n">Bolsa do kit</span></span><b class="q">1</b></li><li><span class="nt"><span class="n">Placas das propriedades</span></span><b class="q">3</b></li></ul></article><article class="rc"><h4><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3zM3 9h18M9 9v11"/></svg></span>Plano de comunicação</h4><ul><li><span class="nt"><span class="n">Carrosséis</span></span><b class="q">3 tipos</b></li><li><span class="nt"><span class="n">Artes de feed</span></span><b class="q">3 tipos</b></li><li><span class="nt"><span class="n">Reels</span><small>de até 60 s, com imagem e som licenciados</small></span><b class="q">3 vídeos</b></li></ul></article><article class="rc"><h4><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2zM8 7h6"/></svg></span>Cartilha</h4><ul><li><span class="nt"><span class="n">Com projeto gráfico e diagramação</span></span><b class="q">1</b></li></ul><p class=rnota>A tiragem é definida pelo projeto, e a impressão não está inclusa.</p></article><article class="rc"><h4><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM3 9h18"/></svg></span>Site</h4><ul><li><span class="nt"><span class="n">Criação</span><small>apresentação, equipe, parceiros, ações, resultados, notícias, publicações e downloads</small></span><b class="q">1</b></li><li><span class="nt"><span class="n">Publicação</span></span><b class="q">1</b></li></ul></article><article class="rc"><h4><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8zM7.5 8h.01"/></svg></span>Etiquetas</h4><ul><li><span class="nt"></span><b class="q">6 variações</b></li></ul></article><article class="rc"><h4><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h10v20H7zM11 18h2"/></svg></span>App</h4><ul><li><span class="nt"><span class="n">Com identidade e elementos gráficos</span></span><b class="q">1</b></li></ul></article></div>
+<div class="bloco-definir"><h3><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H9l-5 4z"/></svg></span>A definir juntos, na reunião</h3><ul><li><span class="tag junto"><i aria-hidden="true"></i>Juntos</span><p><b>Cartilha:</b> o número de páginas, com até 45.</p></li><li><span class="tag junto"><i aria-hidden="true"></i>Juntos</span><p><b>App:</b> como vai ser, com peças e formatos.</p></li><li><span class="tag junto"><i aria-hidden="true"></i>Juntos</span><p><b>Site:</b> o acompanhamento mensal, se vocês precisarem.</p></li></ul></div>
+</div>
+<div class="cv-box"><a class="btn" href="assets/cv/andre-seixas-cv.pdf" download="André Seixas - Currículo.pdf">Baixar currículo (PDF)</a><span class="cv-tam">PDF · 2,2 MB</span></div>
+<p class="ct-fecho">André Seixas · atelie@gepeto.life · (13) 99607-1230</p>
 </div></section></main>
 <dialog id="zoom" aria-label="Imagem ampliada"><button class="zx" type="button">Fechar</button><div class="zin"><img alt=""></div></dialog>
 <script>
@@ -452,6 +514,14 @@ if('IntersectionObserver' in window){
   var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){Object.keys(links).forEach(function(k){links[k].removeAttribute('aria-current')});var a=links[en.target.id];if(a)a.setAttribute('aria-current','true')}})},{rootMargin:'-30% 0px -60% 0px'});
   document.querySelectorAll('main section[id]').forEach(function(s){io.observe(s)});
 }
+})();
+
+(function(){var tl=document.querySelector('.tl');if(!tl||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var lis=[].slice.call(tl.children),tk=0;tl.classList.add('tl-anim');
+function c(el){var r=el.querySelector('.dot').getBoundingClientRect();return r.top+r.height/2}
+function upd(){tk=0;var y=innerHeight*0.6,a=c(lis[0]),b=c(lis[lis.length-1]);var p=Math.max(0,Math.min(1,(y-a)/(b-a)));tl.style.setProperty('--p',p);lis.forEach(function(li){li.classList.toggle('on',c(li)<=y)})}
+function req(){upd()}
+addEventListener('scroll',req,{passive:true});addEventListener('resize',req);upd();
 })();
 </script>
 </body></html>
